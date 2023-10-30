@@ -1,0 +1,16 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.section5{
+  background-color: v.$grey;
+
+  img{
+    width: 100%;
+  }
+
+  &__italic{
+    font-style: italic;
+    margin-left: 0.5rem;
+  }
+}
+

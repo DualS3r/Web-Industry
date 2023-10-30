@@ -1,0 +1,36 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.section1 {
+  background-image: url("../images/background1.png");
+  background-size: cover;
+  background-position: center;
+
+  .row {
+    background-color: rgba(0, 0, 0, 0.552);
+  }
+
+  &__img{
+    width: 15vw;
+    margin: 5vh 10vw 0 0;
+  }
+
+}
+
+/* Media Query */
+
+@media screen and (max-width: 575.98px) {}
+
+@media screen and (max-width: 767.98px) {}
+
+@media screen and (max-width: 991.98px) {
+  .section1{
+
+    &__img{
+      display:none;
+    }
+  }
+ }
+
+
+

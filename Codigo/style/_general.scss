@@ -1,0 +1,46 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+/* *{
+  border: 1px solid red;
+}  */
+
+.title{
+  @include m.title-section;
+}
+
+.subtitle{
+  @include m.subtitle-section;
+}
+
+.format_hr {
+  @include m.format-hr();
+}
+
+.format_buttom1 {
+  @include m.format-buttom1;
+}
+
+.format_buttom2 {
+  @include m.format-buttom2;
+}
+
+.txt_white {
+  @include m.txt-white;
+}
+
+.txt_lightgrey {
+  @include m.txt-lightgrey;
+}
+
+.txt_black {
+  @include m.txt-black;
+}
+
+.txt_bold {
+  @include m.txt-bold;
+}
+
+
+
+

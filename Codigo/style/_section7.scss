@@ -1,0 +1,27 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.section7{
+  background-image: url("../images/background13.jpeg");
+  background-size: cover;
+  background-position: center;
+  
+
+  .row{
+    background-color: rgba(0, 0, 0, 0.552);
+    padding: 15vh 7vw ;
+  }
+
+  &__number{
+    color: v.$yellow;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  &__text{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+  }
+}

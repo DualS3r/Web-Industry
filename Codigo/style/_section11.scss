@@ -1,0 +1,20 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.section11{
+
+  img {
+    width: 100%;
+  }
+
+  button {
+    background-color: transparent;
+    border: 0px;
+    font-weight: bold;
+    text-decoration:underline;
+  }
+
+  button:hover {
+    color: v.$yellow;
+  }
+}

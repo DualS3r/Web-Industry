@@ -1,0 +1,23 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.section6 {
+
+  p{
+    font-weight: 500;
+  }
+
+  img{
+    width: 45vw;
+  }
+}
+
+/* Media Query */
+@media screen and (max-width: 575.98px) {
+  .section6 {
+
+    img{
+      width: 300px;
+    }
+  }
+}

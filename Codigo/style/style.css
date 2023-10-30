@@ -1,0 +1,241 @@
+/* Extend */
+.txt_white {
+  color: white;
+}
+
+.txt_lightgrey {
+  color: #d4d4d4;
+}
+
+.txt_black {
+  color: black !important;
+}
+
+.txt_bold {
+  font-weight: bold !important;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  color: #edc20f;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.format_hr {
+  width: 6vh;
+  opacity: 1;
+  border: 2px solid #edc20f;
+  color: #edc20f;
+}
+
+.format_buttom1 {
+  color: white;
+  font-weight: 500;
+  border: 0px;
+  padding: 0.5vh 1vw;
+  background-color: #edc20f;
+  border-radius: 0.5em;
+}
+
+.format_buttom2 {
+  color: white;
+  font-weight: 500;
+  padding: 0.5vh 1vw;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.5em;
+}
+
+/* Mixin */
+/* *{
+  border: 1px solid red;
+}  */
+.format_buttom1:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.format_buttom2:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.section1 {
+  background-image: url("../images/background1.png");
+  background-size: cover;
+  background-position: center;
+}
+.section1 .row {
+  background-color: rgba(0, 0, 0, 0.552);
+}
+.section1__img {
+  width: 15vw;
+  margin: 5vh 10vw 0 0;
+}
+
+/* Media Query */
+@media screen and (max-width: 991.98px) {
+  .section1__img {
+    display: none;
+  }
+}
+.section2 {
+  font-weight: 500;
+}
+
+.section3 .f-grey {
+  background-color: rgba(0, 0, 0, 0.552);
+  width: 100%;
+  height: 100%;
+}
+.section3__col1 {
+  background-image: url(../images/background2.png);
+  background-size: cover;
+  background-position: center;
+}
+.section3__col2 {
+  background-image: url(../images/background3.png);
+  background-size: cover;
+  background-position: center;
+}
+.section3__col3 {
+  background-image: url(../images/background4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section4 img {
+  width: 60px;
+  padding: 0.5vw;
+  border: 1px solid #edc20f;
+  border-radius: 0.5em;
+}
+.section4__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.section4__text {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.section5 {
+  background-color: #202020;
+}
+.section5 img {
+  width: 100%;
+}
+.section5__italic {
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+.section6 p {
+  font-weight: 500;
+}
+.section6 img {
+  width: 45vw;
+}
+
+/* Media Query */
+@media screen and (max-width: 575.98px) {
+  .section6 img {
+    width: 300px;
+  }
+}
+.section7 {
+  background-image: url("../images/background13.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.section7 .row {
+  background-color: rgba(0, 0, 0, 0.552);
+  padding: 15vh 7vw;
+}
+.section7__number {
+  color: #edc20f;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.section7__text {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.section8 img {
+  width: clamp(50px, 4vw, 60px);
+  aspect-ratio: 1/1;
+  padding: 0.7vw;
+  filter: invert(1);
+}
+.section8__format-icono {
+  background-color: #edc20f;
+  border-radius: 50%;
+  width: clamp(50px, 4vw, 60px);
+  aspect-ratio: 1/1;
+}
+
+.section9 {
+  background-color: #202020;
+}
+.section9__text {
+  border: 1px solid white;
+  padding-bottom: 5vh;
+}
+.section9 img {
+  height: 10vh;
+}
+.section9__name {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.section9__title {
+  color: #edc20f;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.section10 {
+  padding: 5vh 0;
+  background-color: black;
+}
+.section10 img {
+  filter: brightness(2) contrast(200%);
+}
+
+.section11 img {
+  width: 100%;
+}
+.section11 button {
+  background-color: transparent;
+  border: 0px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.section11 button:hover {
+  color: #edc20f;
+}
+
+.section12 .row {
+  background-color: #edc20f;
+}
+.section12__title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.section12__texto {
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */

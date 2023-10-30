@@ -1,0 +1,19 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.section8{
+
+  img{
+    width: clamp(50px, 4vw, 60px);
+    aspect-ratio: 1/1;
+    padding: 0.7vw;
+    filter:invert(1);
+  }
+
+  &__format-icono{
+    background-color: v.$yellow;
+    border-radius: 50%;
+    width: clamp(50px, 4vw, 60px);
+    aspect-ratio: 1/1;
+  }
+}

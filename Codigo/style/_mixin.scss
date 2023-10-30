@@ -1,0 +1,105 @@
+@use "./variables" as v;
+
+/* Extend */
+%txt-white{
+  color: v.$white;
+}
+
+%txt-lightgrey{
+  color: v.$light_grey;
+}
+
+%txt-black{
+  color: v.$black !important;
+}
+
+%txt-bold{
+  font-weight: bold !important;
+}
+
+%title-section{
+  color: v.$white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+%subtitle-section{
+  color: v.$yellow;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+%format-hr{
+  width: 6vh;
+  opacity: 1;
+  border: 2px solid v.$yellow;
+  color: v.$yellow;
+}
+
+%format-buttom1{
+  color: v.$white;
+  font-weight: 500;
+  border: 0px;
+  padding: 0.5vh 1vw;
+  background-color: v.$yellow;
+  border-radius: 0.5em;
+}
+
+%format-buttom2{
+  color: v.$white;
+  font-weight: 500;
+  padding: 0.5vh 1vw;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.5em;
+}
+
+/* Mixin */
+
+@mixin title-section(){
+  @extend %title-section;
+}
+
+@mixin subtitle-section(){
+  @extend %subtitle-section;
+}
+
+@mixin format-hr(){
+  @extend %format-hr;
+}
+
+@mixin format-buttom1(){
+  @extend %format-buttom1;
+  &:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+}
+@mixin format-buttom2(){
+  @extend %format-buttom2;
+  &:hover{
+    background-color: v.$white;
+    color: black;
+    border: 1px solid black;
+  }
+}
+
+@mixin txt-white(){
+  @extend %txt-white;
+}
+
+@mixin txt-lightgrey(){
+  @extend %txt-lightgrey;
+}
+
+@mixin txt-black(){
+  @extend %txt-black;
+}
+
+@mixin txt-bold(){
+  @extend %txt-bold;
+}
